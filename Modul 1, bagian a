@@ -1,0 +1,14 @@
+# Chelscy Maria Margaretha
+# 065002500018
+"""
+"""
+
+nama = input("Masukan nama lengkap anda: ")
+alamat = input("Masukan alamat/tempat tinggal: ")
+kampus = input("Masukan nama kampus: ")
+jurusan = input("Masukan jurusan kamu: ")
+gedung = input("Dimana gedung kampus jurusan kamu (e.g., A) : ")
+print("")
+print("Berikut data kamu!")
+print("")
+print(f"Halo nama saya {nama}, saya tinggal di {alamat}, saya kuliah di {kampus} jurusan {jurusan} di gedung {gedung}, dan saya siap ikut praktikum algoritma")
