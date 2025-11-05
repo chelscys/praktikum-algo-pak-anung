@@ -1,0 +1,24 @@
+# Chelscy Maria Margaretha
+# 065002500018
+# Kamis, 25 September 2025
+
+import math
+
+nilai_a = int(input("Masukkan nilai a = "))
+nilai_b = int(input("Masukkan nilai b = "))
+jumtam = nilai_a + nilai_b
+jumsih = nilai_b - nilai_a
+jumkal = nilai_a * nilai_b
+jumsb = nilai_a % nilai_b
+jumpem = nilai_a / nilai_b
+pangkat = nilai_a ** nilai_b
+log_a = math.log(nilai_a)
+log_b = math.log(nilai_b)
+print(f"Jumlah a ditambah b adalah {jumtam}")
+print(f"Selisih antara a dan b adalah {jumsih}")
+print(f"Jumlah a dikali b adalah {jumkal}")
+print(f"Jumlah sisa pembagian dari hasil a dibagi b adalah {jumsb}")
+print(f"Jumlah a dibagi b adalah {jumpem}")
+print(f"Hasil dari log(a) adalah {log_a}")
+print(f"Hasil dari log(b) adalah {log_b}")
+print(f"Hasil a pangkat b adalah {pangkat}")
