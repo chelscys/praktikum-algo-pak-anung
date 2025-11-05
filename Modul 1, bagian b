@@ -1,0 +1,16 @@
+# Chelscy Maria Margaretha
+# 065002500018
+"""
+"""
+
+panjang = int(input("Masukkan panjang ruangan: "))
+lebar = int(input("Masukkan lebar ruangan: "))
+satuan = input("Masukkan satuan (meter/inci): ")
+if satuan == "meter":
+    rumus = panjang * lebar
+    print(f"Luas ruangan dengan panjang {panjang} dan lebar {lebar} adalah {rumus:.2f}")
+elif satuan == "inci":
+    p_inci = panjang * 39.370
+    l_inci = lebar * 39.370
+    luas_inci = p_inci * l_inci
+    print(f"Luas ruangan dengan panjang {panjang} dan lebar {lebar} adalah {luas_inci:.2f}")
