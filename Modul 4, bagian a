@@ -1,0 +1,5 @@
+# Chelscy Maria Margaretha
+# 065002500018
+
+for i in range(7, 0, -1):
+  print(str(i) * i)
