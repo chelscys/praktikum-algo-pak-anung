@@ -1,0 +1,28 @@
+# Chelscy Maria Margaretha
+# 065002500018
+
+ulang = "y"
+
+while ulang.lower() == "y":
+  bulan = int(input("Masukan Bulan (1-12): "))
+  tahun = int(input("Masukan Tahun: "))
+
+  if bulan in [1, 3, 5, 7, 8, 10, 12]:
+    hari = 31
+  elif bulan in [4, 6, 9, 11]:
+    hari = 30
+  elif bulan == 2: # tahun kabisat
+    if (tahun % 4 == 0 and tahun % 100 != 0) or (tahun % 400 == 0):
+      hari = 29
+    else:
+      hari = 28
+  else:
+    print("Angka Bulan tidak valid.")
+    hari = None
+
+  if hari:
+    print(f"Jumlah hari pada bulan {bulan} tahun {tahun} adalah {hari} hari.")
+
+  ulang = input("Apakah ingin menghitung lagi? (y/n): ")
+
+  print("Program selesai.")
