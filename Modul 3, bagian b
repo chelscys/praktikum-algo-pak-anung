@@ -1,0 +1,80 @@
+# Chelscy Maria Margaretha
+# 065002500018
+
+print("--- Belanja Diskon ---")
+print("")
+
+nama = input("Masukan Nama : ")
+nim = input("Masukan Nim : ")
+total_belanja = input("Masukan Total Belanja anda : ")
+pakai_kupon = input("bayar pakai kupon? y/n : ")
+
+print("")
+
+total_belanja = int(total_belanja)
+
+if total_belanja <= 0:
+    print("Masukan total belanja dengan benar!")
+
+else:
+    if "y" in pakai_kupon.lower():
+        kode = input("Masukan kode kupon : ")
+        if kode == "IKL6309":
+            print("-- SELAMAT ANDA MENDAPATKAN DISKON 100%! --")
+            print("")
+            print("---------Rincian Belanja---------")
+            print("")
+            print(f"{nama} - {nim}")
+            print("Total Belanja : Rp.", total_belanja)
+            print("Potongan      : Rp.", total_belanja)
+            print("Total Bayar   : GRATIS TIS TIS!")
+            print("")
+            print("Terimakasih sudah belanja! ᵔ ᵕ ᵔ")
+        else:
+            print("Kode yang anda pakai salah atau expired.")
+            diskon = 0
+            potongan = total_belanja * diskon / 100
+            total_bayar = total_belanja - potongan
+
+            print("")
+            print("---------Rincian Belanja---------")
+            print("")
+            print(f"{nama} - {nim}")
+            print("Total Belanja : Rp.", total_belanja)
+            print("Potongan      : Rp.", int(potongan))
+            print("Total Bayar   : Rp.", int(total_bayar))
+            print("")
+            print("Terimakasih sudah belanja! ᵔ ᵕ ᵔ")
+
+    elif "n" in pakai_kupon.lower():
+        if total_belanja >= 40000 and total_belanja <= 89999:
+            print("-- SELAMAT ANDA MENDAPATKAN DISKON 20%! --")
+            diskon = 20
+        elif total_belanja >= 90000 and total_belanja <= 189999:
+            print("-- SELAMAT ANDA MENDAPATKAN DISKON 40%! --")
+            diskon = 40
+        elif total_belanja >= 190000 and total_belanja <= 389999:
+            print("-- SELAMAT ANDA MENDAPATKAN DISKON 60%! --")
+            diskon = 60
+        elif total_belanja >= 390000:
+            print("-- SELAMAT ANDA MENDAPATKAN DISKON 80%! --")
+            diskon = 80
+        else:
+            print("-- ANDA TIDAK MENDAPATKAN DISKON.. --")
+            diskon = 0
+
+        potongan = total_belanja * diskon / 100
+        total_bayar = total_belanja - potongan
+
+        print("")
+        print("---------Rincian Belanja---------")
+        print("")
+        print(f"{nama} - {nim}")
+        print("Total Belanja : Rp.", total_belanja)
+        print("Potongan      : Rp.", int(potongan))
+        print("Total Bayar   : Rp.", int(total_bayar))
+        print("")
+        print("Terimakasih sudah belanja! ᵔ ᵕ ᵔ")
+
+    else:
+        print("Masukan pilihan dengan benar.")
